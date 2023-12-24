@@ -15,9 +15,9 @@ sinks:
     type: clickhouse
     inputs:
       - dummy_logs
-    database: {{ all_clickhouse_db }}
-    endpoint: {{ all_clickhouse_url }}
-    table: {{ all_clickhouse_table }}
+    database: {{ clickhouse_db }}
+    endpoint: {{ clickhouse_url }}
+    table: {{ clickhouse_table }}
     acknowledgements:
       enabled: false
     healthcheck:
